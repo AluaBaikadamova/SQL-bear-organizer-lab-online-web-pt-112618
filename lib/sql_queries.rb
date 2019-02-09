@@ -27,9 +27,9 @@ ORDER BY COUNT(color) DESC limit 1"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-"SELECT COUNT(*) FROM bears WHERE temperament=""goofy"";"
+"SELECT COUNT(*) FROM bears WHERE temperament='goofy';"
 end
 
 def selects_bear_that_killed_Tim
-  "SELECT * FROM bears WHERE name=""null"";"
+  "SELECT * FROM bears WHERE name='null';"
 end
