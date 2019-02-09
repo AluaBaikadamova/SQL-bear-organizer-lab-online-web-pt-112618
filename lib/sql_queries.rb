@@ -3,7 +3,7 @@ def selects_all_female_bears_return_name_and_age
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order
-  "SELECT * FROM bears ORDER BY name;"
+  "SELECT name FROM bears ORDER BY name;"
 end
 
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
@@ -19,7 +19,7 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT COUNT(color) FROM bears ORDER BY count(color) desc LIMIT 1;"
+  "SELECT color FROM bears ORDER BY count(color) desc ;"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
@@ -27,5 +27,5 @@ def counts_number_of_bears_with_goofy_temperaments
 end
 
 def selects_bear_that_killed_Tim
-  "SELECT COUNT(*) FROM bears WHERE name=null;"
+  "SELECT COUNT(*) FROM bears WHERE name=nil;"
 end
