@@ -27,5 +27,5 @@ SELECT COUNT(*) FROM bears WHERE temperament="goofy";
 end
 
 def selects_bear_that_killed_Tim
-  "Write your SQL query here"
+  SELECT COUNT(*) FROM bears WHERE name=null;
 end
